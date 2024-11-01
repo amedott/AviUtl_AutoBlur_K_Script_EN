@@ -16,7 +16,7 @@ Download
 
 - RotBlur_M (Mr-Ojii氏)
 
-    [Download](https://github.com/Mr-Ojii/AviUtl-RotBlur_M-Script/releases) 
+    [Download](https://github.com/Mr-Ojii/AviUtl-RotBlur_M-Script/releases)   
     Open a notepad program, edit `RotBlur_M.lua`, save.  
         - Line 25, replace `obj.effect("領域拡張", "上", addY, "下", addY, "右", addX, "左", addX)` with `obj.effect("Region expansion", "Top", addY, "Bottom", addY, "Left", addX, "Right", addX)`  
 
