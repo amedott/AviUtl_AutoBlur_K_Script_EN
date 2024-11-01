@@ -51,7 +51,7 @@ Script itself should auto-detect `T_RotateBlur.dll` and `RotBlur_M.lua` if you h
     - Rot Blur : Rotational blur
 4. Relative Path
 
-    Specifies path for the roational blur. Detects if it's ini the same place as AutoBlur_K.
+    Specifies path for the rotational blur. Detects if it's ini the same place as AutoBlur_K.
 
 5. Mod Path
 
@@ -117,7 +117,3 @@ Script itself should auto-detect `T_RotateBlur.dll` and `RotBlur_M.lua` if you h
 ## LICENSE
 LICENSEファイルに記載
 -- COPYRIGHT GOES TO korarei, I ONLY TRANSLATED THIS FOR MY OWN USE. -ame。
-  - コードの整理
-
-- **v1.0.0**
-  - release
