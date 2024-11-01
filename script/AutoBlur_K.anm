@@ -82,7 +82,7 @@ local function directional_blur(tbl, id, rz, dx_option, dy_option)
 
     --ブラーをかける
     if (chk_directional_blur) then
-        obj.effect("方向ブラー", "範囲", amount * math.abs(dr) * shutter_angle / (720 * adjust), "角度", 90 + math.deg(apparent_rad_pos) - obj.rz - rz, "サイズ固定", keep_size_num)
+        obj.effect("Direction blur", "Range", amount * math.abs(dr) * shutter_angle / (720 * adjust), "Angle", 90 + math.deg(apparent_rad_pos) - obj.rz - rz, "Fixed Size", keep_size_num)
     end
 
     --中心座標の変化量を返す
@@ -106,7 +106,7 @@ local function radial_blur(tbl, id, cr, rad_pos, rz, d_deg, s_n_option)
         cr = (ds > 0) and -cr or cr
         local d_rad = (ds > 0) and math.rad(d_deg) or math.rad(-d_deg)
         local cx, cy = obj.cx * math.cos(d_rad) - obj.cy * math.sin(d_rad), obj.cx * math.sin(d_rad) + obj.cy * math.cos(d_rad)
-        obj.effect("放射ブラー", "範囲", amount * (1 - math.min(s1, s0) / math.max(s1, s0)) * shutter_angle * 10 / 36, "X",  cx - cr * math.cos(rad_pos - math.rad(obj.rz + rz)), "Y", cy - cr * math.sin(rad_pos - math.rad(obj.rz + rz)), "サイズ固定", keep_size_num)
+        obj.effect("Radial Blur", "Range", amount * (1 - math.min(s1, s0) / math.max(s1, s0)) * shutter_angle * 10 / 36, "X",  cx - cr * math.cos(rad_pos - math.rad(obj.rz + rz)), "Y", cy - cr * math.sin(rad_pos - math.rad(obj.rz + rz)), "Fixed Size", keep_size_num)
     end
 
     --拡大率と中心座標を返す
@@ -136,7 +136,7 @@ local function rotational_blur(tbl, id, d_deg_option)
         local r = math.sqrt(a * a + b * b)
         if not keep_size then
             local add_x, add_y = math.ceil(r - w / 2 + 1), math.ceil(r - h / 2 + 1)
-            obj.effect("領域拡張", "上", add_y, "下", add_y, "右", add_x, "左", add_x)
+            obj.effect("Region expansion", "Top", add_y, "Bottom", add_y, "Left", add_x, "Right", add_x)
         end
 
         --moduleはscriptフォルダ直下も調べる
