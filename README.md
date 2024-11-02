@@ -8,11 +8,11 @@ Download it from the [script] folder yourself.
 
 ## Starting
 
-Download
+Download these:
 
 - T_RotateBlur (Tim)
 
-    ~~[Download](https://tim3.web.fc2.com/sidx.htm)~~ Probably included in your Extra Pack AviUtl install or something.
+    ~~[Download](https://tim3.web.fc2.com/sidx.htm)~~ Probably included in your Extra Pack AviUtl install or something (probably under `Tim_filter`). Use those.
 
 - RotBlur_M (Mr-Ojii氏)
 
